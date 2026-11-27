@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-dvh flex-col justify-between overflow-hidden bg-black px-5 pt-5 pb-8 text-white md:px-7">
+    <section className="relative flex min-h-dvh flex-col justify-between overflow-hidden bg-black px-4 sm:px-5 pt-4 sm:pt-5 pb-6 sm:pb-8 text-white md:px-7">
       <Image
         src="/images/erick-standing-horizontal.jpeg"
         alt=""
@@ -20,13 +20,13 @@ export function Hero() {
 
       <h1
         aria-label={site.name}
-        className="relative text-[11vw] leading-[0.85] font-semibold tracking-tighter whitespace-nowrap"
+        className="relative text-[10vw] md:text-[11vw] leading-[0.85] font-semibold tracking-tighter whitespace-nowrap"
       >
         {site.wordmark}
       </h1>
 
-      <div className="relative flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-        <p className="text-5xl leading-[0.95] font-medium tracking-tighter md:text-7xl">
+      <div className="relative flex flex-col gap-6 sm:gap-10 md:flex-row md:items-end md:justify-between">
+        <p className="text-4xl sm:text-5xl leading-[0.95] font-medium tracking-tighter md:text-7xl">
           {site.tagline.map((line, i) => (
             <motion.span
               key={line}

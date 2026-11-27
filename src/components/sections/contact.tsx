@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, type ContactInput } from "@/lib/validation";
 
+const CONTACT_TO_EMAIL = "erickalexsandrocontato@gmail.com";
+
 const field =
   "w-full border-b border-ink/30 bg-transparent py-3 text-lg outline-none focus:border-ink";
 
@@ -17,14 +19,14 @@ export function Contact() {
     formState: { errors, isSubmitting },
   } = useForm<ContactInput>({ resolver: zodResolver(contactSchema) });
 
-  async function onSubmit(values: ContactInput) {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
-    });
-    setStatus(res.ok ? "sent" : "error");
-    if (res.ok) reset();
+  function onSubmit(values: ContactInput) {
+    const { name, email, message } = values;
+    const subject = `Portfolio message from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const mailtoUrl = `mailto:${CONTACT_TO_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+    setStatus("sent");
+    reset();
   }
 
   return (

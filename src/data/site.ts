@@ -7,10 +7,12 @@ export const site = {
   tagline: ["FullStack.", "AI Engineering.", "Cybersecurity."],
   description:
     "Portfolio of Erick Alexsandro, a full-stack developer building fast, accessible web apps.",
-  email: "contatoerickalexsandro@gmail.com",
+  email: "erickalexsandrocontato@gmail.com",
   nav: [
     { label: "Projects", href: "#projects" },
     { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+    { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
   ],
   about: [
