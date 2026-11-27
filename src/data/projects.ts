@@ -11,7 +11,7 @@ export const projects: Project[] = [
     description:
       "This project was made by Erick Alexsandro with the purpose of learning more about and how to use the Last.fm API and Spotify API. It was made using Vue 3, Vue Router and Vite.",
     stack: ["Vue 3", "Vue Router", "Vite", "Last.fm API", "Spotify API"],
-    image: "/images/hero.svg",
+    image: "/images/similartists.gif",
     href: "https://similartists.vercel.app/",
     repo: "https://github.com/erick-alexsandro/Similartists",
   },
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       "PomodoroApp is an application that helps users manage their tasks and study sessions using the Pomodoro technique. It includes functionalities for creating, editing and completing tasks, as well as controlling work time and breaks.",
     stack: ["C#"],
-    image: "/images/hero.svg",
+    image: "/images/pomodoroapp.png",
     href: "https://github.com/erick-alexsandro/PomodoroApp",
     repo: "https://github.com/erick-alexsandro/PomodoroApp",
   },

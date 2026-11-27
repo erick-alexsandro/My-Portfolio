@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative flex min-h-dvh flex-col justify-between overflow-hidden bg-black px-5 pt-5 pb-8 text-white md:px-7">
       <Image
-        src="/images/hero.svg"
+        src="/images/erick-standing-horizontal.jpeg"
         alt=""
         fill
         priority
@@ -20,7 +20,7 @@ export function Hero() {
 
       <h1
         aria-label={site.name}
-        className="relative text-[17vw] leading-[0.85] font-semibold tracking-tighter whitespace-nowrap"
+        className="relative text-[11vw] leading-[0.85] font-semibold tracking-tighter whitespace-nowrap"
       >
         {site.wordmark}
       </h1>
