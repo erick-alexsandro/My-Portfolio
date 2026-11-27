@@ -2,7 +2,7 @@
 
 Personal portfolio site built with [Next.js](https://nextjs.org) 16, React 19, TypeScript, and Tailwind CSS 4.
 
-![My Portfolio demo](public\images\portfolio.gif)
+![My Portfolio demo](./public/images/portfolio.gif)
 
 ## Tech stack
 
