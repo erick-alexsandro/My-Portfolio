@@ -12,7 +12,7 @@ export function Projects() {
         {projects.map((p) => (
           <li key={p.slug}>
             <Link href={`/projects/${p.slug}`} className="group block">
-              <div className="bg-pill-light relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <div className="bg-pill-light relative aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={p.image}
                   alt={p.title}
